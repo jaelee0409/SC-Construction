@@ -3,12 +3,11 @@ html {
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
     color: #000;
 }
 
 #mainText {
-    text-shadow: 0 0 7px rgba(255, 255, 255, 0.7);
+    text-shadow: 0 0 7px rgba(255, 255, 255, 0.8);
 }
 
 #mainNav {
@@ -20,7 +19,6 @@ body {
 }
 
 #mainNav .navbar-brand {
-    font-family: Arial;
     font-weight: 700;
     font-size: 1.2rem;
     color: #000;
@@ -28,7 +26,6 @@ body {
 
 #mainNav .navbar-nav .nav-item .nav-link {
     color: #000;
-    font-family: Arial;
     font-weight: 700;
     font-size: 1.1rem;
     padding: 0.75rem 0;
@@ -69,6 +66,7 @@ body {
 }
 
 header.masthead {
+    min-height: 65rem;
     padding-top: 10rem;
     padding-bottom: calc(18rem - 72px);
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(92, 77, 66, 0.8)), to(rgba(92, 77, 66, 0.8))), url("../img/hero.jpg");
@@ -82,7 +80,7 @@ header.masthead {
 @media (min-width: 992px) {
     header.masthead {
         height: 100vh;
-        min-height: 40rem;
+        min-height: 65rem;
         padding-top: 72px;
         padding-bottom: 0;
     }
