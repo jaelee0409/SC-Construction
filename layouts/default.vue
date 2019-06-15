@@ -1,6 +1,6 @@
 <template>
     <v-app>
-        <v-toolbar fixed app class="px-5" id="mainNav">
+        <v-toolbar fixed app id="mainNav">
             <v-toolbar-title v-text="title"></v-toolbar-title>
             <v-spacer />
             <v-toolbar-items class="hidden-sm-and-down">
@@ -44,7 +44,7 @@ export default {
 
 <style>
 #mainNav {
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
 #navItem:hover {

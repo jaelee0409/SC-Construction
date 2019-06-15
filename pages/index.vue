@@ -3,8 +3,8 @@
         <!-- Photo by Verne Ho on Unsplash -->
         <v-parallax :src="require('@/assets/hero.jpg')" height="/* */" id="hero_image">
             <v-layout align-center justify-center class="text-xs-center">
-                <v-card white class="mx-5 elevation-24" id="hero_card">
-                    <h1 class="display-2 font-weight-black ma-4 black--text">BUILDING TRUST IN BUSINESS RELATIONSHIPS</h1>
+                <v-card white class="ma-5 elevation-24" id="hero_card">
+                    <h1 class="display-1 font-weight-black mx-4 px-4 black--text">BUILDING TRUST IN BUSINESS RELATIONSHIPS</h1>
                 </v-card>
             </v-layout>
         </v-parallax>
@@ -30,8 +30,7 @@ export default {
 }
 
 #hero_card {
-    background-color: rgba(200, 200, 200, 0.3);
-    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.9);
 }
 </style>
 
