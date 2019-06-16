@@ -1,10 +1,10 @@
 <template>
     <v-app>
         <v-toolbar fixed app id="mainNav">
-            <v-toolbar-title v-text="title"></v-toolbar-title>
+            <v-toolbar-title v-text="title" class="font-weight-bold"></v-toolbar-title>
             <v-spacer />
             <v-toolbar-items class="hidden-sm-and-down">
-                <v-btn flat v-for="link in links" :key="link.name" :to="link.route" id="navItem">
+                <v-btn flat v-for="link in links" :key="link.name" :to="link.route" class="font-weight-bold" id="navItem">
                     {{ link.name }}
                 </v-btn>
             </v-toolbar-items>
@@ -48,10 +48,10 @@ export default {
 }
 
 #navItem:hover {
-    color: #AF623A;
+    color: #00818E;
 }
 
 #navItem.v-btn--active {
-    color: #AF623A;
+    color: #00818E;
 }
 </style>
