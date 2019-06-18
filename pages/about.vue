@@ -35,7 +35,7 @@
             <v-divider class="my-4"></v-divider>
             <v-container class="pb-5 hidden-xs-only">
                 <v-layout row wrap>
-                    <v-flex v-for="i in objectives" xs4>
+                    <v-flex xs4 v-for="i in objectives" :key="`4${i.id}`">
                         <div class="px-3 headline font-weight-light">
                             {{ i.text }}
                         </div>
@@ -44,7 +44,7 @@
             </v-container>
             <v-container class="hidden-sm-and-up">
                 <v-layout row wrap>
-                    <v-flex v-for="i in objectives" xs12>
+                    <v-flex xs12 v-for="i in objectives" :key="`12${i.id}`">
                         <div class="mb-3 subheading font-weight-light">
                             {{ i.text }}
                         </div>
@@ -58,7 +58,7 @@
             <v-divider class="my-4"></v-divider>
             <v-container class="px-5 hidden-xs-only">
                 <v-layout row justify-center wrap>
-                    <v-flex v-for="i in values" xs4>
+                    <v-flex xs4 v-for="i in values" :key="`4${i.title}`">
                         <div class="my-4">
                             <v-icon size="50" class="ma-2">{{ i.icon }}</v-icon>
                             <h5 class="mb-3 headline font-weight-medium">{{ i.title }}</h5>
@@ -69,7 +69,7 @@
             </v-container>
             <v-container class="hidden-sm-and-up">
                 <v-layout row wrap>
-                    <v-flex v-for="i in values" xs12>
+                    <v-flex xs12 v-for="i in values" :key="`12${i.title}`">
                         <div class="mb-5">
                             <v-icon size="30" class="ma-2">{{ i.icon }}</v-icon>
                             <h5 class="headline font-weight-medium">{{ i.title }}</h5>
@@ -88,13 +88,13 @@ export default {
         return {
             objectives: [
                 {
-                    text: 'To perform for our customers the highest level of quality construction services at fair and market competitive prices.'
+                    id: 0, text: 'To perform for our customers the highest level of quality construction services at fair and market competitive prices.'
                 },
                 {
-                    text: 'To ensure the longevity of our company through repeat and referral business achieved by customer satisfaction in all areas including timeliness, attention to detail and service-minded attitudes.'
+                    id: 1, text: 'To ensure the longevity of our company through repeat and referral business achieved by customer satisfaction in all areas including timeliness, attention to detail and service-minded attitudes.'
                 },
                 {
-                    text: 'To maintain the highest levels of professionalism, integrity, honesty and fairness in our relationships with our suppliers, subcontractors, professional associates and customers.'
+                    id: 2, text: 'To maintain the highest levels of professionalism, integrity, honesty and fairness in our relationships with our suppliers, subcontractors, professional associates and customers.'
                 }
             ],
             values: [

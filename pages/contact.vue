@@ -3,7 +3,7 @@
         <div class="py-5 blue-grey lighten-3  hidden-xs-only">
             <h4 class="mt-5 pt-4 display-1 font-weight-bold text-xs-center">Contact Us</h4>
             <v-divider class="my-4"></v-divider>
-            <v-layout class="my-5 pt-3 text-xs-center">
+            <v-layout class="mb-5 pt-4 text-xs-center">
                 <v-layout justify-end>
                     <v-flex mr-5 xs12 class="title font-weight-light text-xs-right">
                         <p>Tel: (512)-238-3061</p>
@@ -130,31 +130,16 @@
 
 <script>
 export default {
-    methods: {
-        onSubmit(evt) {
-			evt.preventDefault();
-
-			this.isSending = true;
-
-			setTimeout(() => {
-				// Build for data
-				let form = new FormData();
-				for (let field in this.contact) {
-					form.append(field, this.contact[field]);
-				}
-
-				// Send form to server	
-				this.$http.post('/app.php', form).then((response) => {
-					console.log(response);
-					this.clearForm();
-					this.isSending = false;
-				}).catch((e) => {
-					console.log(e)
-				});
-
-			}, 1000);
-		}
-    }
+    data() {
+        return {
+            nameRules: [v => !!v || "The input is required"],
+            emailRules: [
+                v => !!v || "E-mail is required",
+                v => /.+@.+/.test(v) || "E-mail must be valid"
+            ],
+            messageRules: [v => !!v || "The message is required"]
+        };
+    },
 }
 </script>
 
