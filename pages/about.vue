@@ -3,7 +3,7 @@
         <div class="py-5 blue-grey lighten-3">
             <h4 class="mt-5 pt-4 display-1 font-weight-bold text-xs-center">About Us</h4>
             <v-divider class="my-4"></v-divider>
-            <v-container class="hidden-xs-only"  id="aboutUsDesktop">
+            <v-container class="hidden-xs-only" id="aboutUsDesktop">
                 <div class="mx-5 px-5 headline font-weight-light">
                     <p class="mb-4">SC Construction Company was founded in 1995 by Sung Cho who is serving as the president of Korean American Chamber of Commerce in Austin and the director of Asian Contractor Association of Austin (<a href="http://acta-austin.com">acta-austin.com</a>) currently.</p>
                     <p class="mb-4">We will strive to implement a long term relationship with our clients, based on safety, quality, timely service and an anticipation of their needs. To fulfill this mission, we will treat all employees fairly and involve them in the quality improvement process to insure responsiveness and cost effective work execution. We value the importance of our relationships and will continue to remain fair and true in our dealings with all employees, clients, vendors, and partners.</p>
@@ -35,7 +35,7 @@
             <v-divider class="my-4"></v-divider>
             <v-container class="pb-5 hidden-xs-only">
                 <v-layout row wrap>
-                    <v-flex v-for="i in objectives" :key="'4${i}'" xs4>
+                    <v-flex v-for="i in objectives" xs4>
                         <div class="px-3 headline font-weight-light">
                             {{ i.text }}
                         </div>
@@ -44,7 +44,7 @@
             </v-container>
             <v-container class="hidden-sm-and-up">
                 <v-layout row wrap>
-                    <v-flex v-for="i in objectives" :key="'12${i}'" xs12>
+                    <v-flex v-for="i in objectives" xs12>
                         <div class="mb-3 subheading font-weight-light">
                             {{ i.text }}
                         </div>
@@ -58,7 +58,7 @@
             <v-divider class="my-4"></v-divider>
             <v-container class="px-5 hidden-xs-only">
                 <v-layout row justify-center wrap>
-                    <v-flex v-for="i in values" :key="'4${i}'" xs4>
+                    <v-flex v-for="i in values" xs4>
                         <div class="my-4">
                             <v-icon size="50" class="ma-2">{{ i.icon }}</v-icon>
                             <h5 class="mb-3 headline font-weight-medium">{{ i.title }}</h5>
@@ -69,7 +69,7 @@
             </v-container>
             <v-container class="hidden-sm-and-up">
                 <v-layout row wrap>
-                    <v-flex v-for="i in values" :key="'12${i}'" xs12>
+                    <v-flex v-for="i in values" xs12>
                         <div class="mb-5">
                             <v-icon size="30" class="ma-2">{{ i.icon }}</v-icon>
                             <h5 class="headline font-weight-medium">{{ i.title }}</h5>
