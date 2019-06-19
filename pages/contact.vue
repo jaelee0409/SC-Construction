@@ -1,18 +1,18 @@
 <template>
     <v-container fluid class="pa-0">
-        <div class="py-5 blue-grey lighten-3  hidden-xs-only">
+        <div class="py-5 blue-grey lighten-4  hidden-xs-only">
             <h4 class="mt-5 pt-4 display-1 font-weight-bold text-xs-center">Contact Us</h4>
             <v-divider class="my-4"></v-divider>
             <v-layout class="mb-5 pt-4 text-xs-center">
                 <v-layout justify-end>
-                    <v-flex mr-5 xs12 class="title font-weight-light text-xs-right">
+                    <v-flex mr-5 xs12 class="title font-weight-regular text-xs-right">
                         <p>Tel: (512)-238-3061</p>
                         <p>Fax: (512) 655-2101</p>
                         <p>Cell: (512)-773-0001</p>
                     </v-flex>
                 </v-layout>
                 <v-layout>
-                    <v-flex ml-5 xs12 class="title font-weight-light text-xs-left">
+                    <v-flex ml-5 xs12 class="title font-weight-regular text-xs-left">
                         <p>Email: <a href="mailto:773sung@gmail.com" id="emailLink">773sung@gmail.com</a></p>
                         <p>Mail: 15046 Jacks Pond Rd</p>
                         <p>Austin, TX 78728</p>
@@ -26,7 +26,7 @@
                     <v-container class="px-5">
                         <v-layout row justify-center>
                             <v-flex pa-0 xs10>
-                                <v-text-field background-color="brown lighten-5"
+                                <v-text-field background-color="blue-grey lighten-5"
                                               v-model="name"
                                               :rules="nameRules"
                                               label="Name"
@@ -38,7 +38,7 @@
                         </v-layout>
                         <v-layout row justify-center>
                             <v-flex pa-0 xs10>
-                                <v-text-field background-color="brown lighten-5" 
+                                <v-text-field background-color="blue-grey lighten-5" 
                                               v-model="email"
                                               :rules="emailRules"
                                               label="E-mail"
@@ -50,7 +50,7 @@
                         </v-layout>
                         <v-layout row justify-center>
                             <v-flex pa-0 xs10>
-                                <v-text-field background-color="brown lighten-5"
+                                <v-text-field background-color="blue-grey lighten-5"
                                               v-model="message"
                                               :rules="messageRules"
                                               label="Message"
@@ -67,7 +67,7 @@
                 </form>
             </v-container>
         </div>
-        <div class="py-5 blue-grey lighten-3 hidden-sm-and-up">
+        <div class="py-5 blue-grey lighten-4 hidden-sm-and-up">
             <h4 class="mt-5 pt-4 display-1 font-weight-bold text-xs-center">Contact Us</h4>
             <v-divider class="my-4"></v-divider>
             <v-layout class="pt-5 text-xs-center">
@@ -132,12 +132,12 @@
 export default {
     data() {
         return {
-            nameRules: [v => !!v || "The input is required"],
+            nameRules: [v => !!v || "Name is required"],
             emailRules: [
                 v => !!v || "E-mail is required",
                 v => /.+@.+/.test(v) || "E-mail must be valid"
             ],
-            messageRules: [v => !!v || "The message is required"]
+            messageRules: [v => !!v || "Message is required"]
         };
     },
 }

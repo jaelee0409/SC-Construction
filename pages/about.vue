@@ -1,6 +1,6 @@
 <template>
     <v-container fluid class="pa-0">
-        <div class="py-5 blue-grey lighten-3">
+        <div class="py-5 blue-grey lighten-4">
             <h4 class="mt-5 pt-4 display-1 font-weight-bold text-xs-center">About Us</h4>
             <v-divider class="my-4"></v-divider>
             <v-container class="hidden-xs-only" id="aboutUsDesktop">
