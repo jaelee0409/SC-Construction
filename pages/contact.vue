@@ -27,7 +27,6 @@
                         <v-layout row justify-center>
                             <v-flex pa-0 xs10>
                                 <v-text-field background-color="blue-grey lighten-5"
-                                              v-model="name"
                                               :rules="nameRules"
                                               label="Name"
                                               type="text"
@@ -39,7 +38,6 @@
                         <v-layout row justify-center>
                             <v-flex pa-0 xs10>
                                 <v-text-field background-color="blue-grey lighten-5" 
-                                              v-model="email"
                                               :rules="emailRules"
                                               label="E-mail"
                                               type="email"
@@ -51,7 +49,6 @@
                         <v-layout row justify-center>
                             <v-flex pa-0 xs10>
                                 <v-text-field background-color="blue-grey lighten-5"
-                                              v-model="message"
                                               :rules="messageRules"
                                               label="Message"
                                               height="300"
@@ -85,7 +82,6 @@
                         <v-layout row justify-center>
                             <v-flex pa-0 xs8>
                                 <v-text-field background-color="brown lighten-5"
-                                              v-model="name"
                                               :rules="nameRules"
                                               label="Name"
                                               type="text"
@@ -97,7 +93,6 @@
                         <v-layout row justify-center>
                             <v-flex pa-0 xs8>
                                 <v-text-field background-color="brown lighten-5" 
-                                              v-model="email"
                                               :rules="emailRules"
                                               label="E-mail"
                                               type="email"
@@ -109,7 +104,6 @@
                         <v-layout row justify-center>
                             <v-flex pa-0 xs8>
                                 <v-text-field background-color="brown lighten-5"
-                                              v-model="message"
                                               :rules="messageRules"
                                               label="Message"
                                               height="200"
