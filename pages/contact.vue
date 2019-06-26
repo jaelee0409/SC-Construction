@@ -14,8 +14,8 @@
                 <v-layout>
                     <v-flex ml-5 xs12 class="title font-weight-regular text-xs-left">
                         <p>Email: <a href="mailto:773sung@gmail.com" id="emailLink">773sung@gmail.com</a></p>
-                        <p>Mail: 15046 Jacks Pond Rd</p>
-                        <p>Austin, TX 78728</p>
+                        <p>Mail: 13785 Research Blvd Suite 125</p>
+                        <p>Austin, TX 78750</p>
                     </v-flex>
                 </v-layout>
             </v-layout>
