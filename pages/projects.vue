@@ -75,7 +75,7 @@
                         {{ t.title }}
                     </v-tab>
                 </v-tabs>
-                <v-card class="ma-5 elevation-24" v-for="(i, index) in tabs[currentTab].count" :key="i">
+                <v-card class="ma-3 elevation-24" v-for="(i, index) in tabs[currentTab].count" :key="i">
                         <v-carousel v-if="projects[currentTab][index].numPics > 0" height="auto">
                             <v-carousel-item lazy v-for="(p, cur) in projects[currentTab][index].numPics" :key="p" :src="projects[currentTab][index].srcMin[cur]" v-on:click="openImage(index, cur)">
                             </v-carousel-item>

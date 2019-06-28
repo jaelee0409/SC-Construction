@@ -14,7 +14,7 @@
                 <v-layout>
                     <v-flex ml-5 xs12 class="title font-weight-regular text-xs-left">
                         <p>Email: <a href="mailto:773sung@gmail.com" id="emailLink">773sung@gmail.com</a></p>
-                        <p>Mail: 13785 Research Blvd Suite 125</p>
+                        <p>Address: 13785 Research Blvd Suite 125</p>
                         <p>Austin, TX 78750</p>
                     </v-flex>
                 </v-layout>
@@ -73,7 +73,8 @@
                     <p class="title font-weight-light">Fax: 512.655.2101</p>
                     <p class="title font-weight-light">Cell: 512.773.0001</p>
                     <p class="title font-weight-light"><a href="mailto:773sung@gmail.com" id="emailLink">773sung@gmail.com</a></p>
-                    <p class="title font-weight-light">15046 Jacks Pond Rd<br>Austin, TX 78728</p>
+                    <p class="title font-weight-light">13785 Research Blvd Suite 125</p>
+                    <p class="title font-weight-light">Austin, TX 78750</p>
                 </v-flex>
             </v-layout>
             <v-container mt-5 pa-0>
